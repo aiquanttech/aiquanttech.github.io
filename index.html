@@ -1,315 +1,442 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
-    <title>统计信息与图像处理研究中心主页</title>
-    <link rel="shortcut icon" href="./images/favicon.ico" />
-    <link href="./css/style.css"  rel="stylesheet" type="text/css" media="all">
-    <script src="./js/jquery-1.9.1.min.js" type="text/javascript"></script>
-</head>
-<body>
-<div id="allcontent">
-    <div id="siipback">
-        <div class="content_siip">
-            <div id="siipheader">
-                <div id="siiptop1">
-                    <div class="siiplogo"><h1>统计信息与图像处理研究中心</h1></div>
-                    <div class="siiptopnav">
-                        <ul class="siiptopnavlist siiptopnavlist1">
-                            <li>
-                                <a href="#home">Home</a>
-                            </li>
-                            <li>
-                                <a href="#team">Team</a>
-                            </li>
-                            <li>
-                                <a href="#work">Work</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI for quantitative finace</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/animate.min.css" rel="stylesheet"> 
+	<link href="css/animate.css" rel="stylesheet" />
+	<link href="css/prettyPhoto.css" rel="stylesheet"> 
+	<link href="css/style.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="row">
+					<div class="site-logo">
+						<a href="index.html" class="brand">AI Quant</a>
+					</div>
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<i class="fa fa-bars"></i>
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="nav navbar-nav navbar-right">
+							  <li><a href="#home">Home</a></li>
+							  <li><a href="#about">About This</a></li>
+<!-- 							  <li><a href="#portfolio">Portfolio</a></li>
+							  <li><a href="#features">Features</a></li> -->
+							  <li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					<!-- /.Navbar-collapse -->		 
+			</div>
+		</div>		
+	</nav>
+   
+    <div id="home">
+		<div class="slider">
+			<div id="about-slider">
+				<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators visible-xs">
+						<li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-slider" data-slide-to="1"></li>
+						<li data-target="#carousel-slider" data-slide-to="2"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/slide2.jpg" class="img-responsive" alt=""> 
+						</div>
+					   <div class="item">
+							<img src="images/slide3.jpg" class="img-responsive" alt=""> 
+					   </div> 
+					   <div class="item">
+							<img src="images/slide4.jpg" class="img-responsive" alt=""> 
+					   </div> 
+					</div>
+					
+					<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+						<i class="fa fa-angle-left"></i> 
+					</a>
+					
+					<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+						<i class="fa fa-angle-right"></i> 
+					</a>
+				</div> <!--/#carousel-slider-->
+			</div><!--/#about-slider-->
+		</div>
+	</div>
+
+	<section id="about">
+		<div class="container">
+			<div class="center">
+				<div class="col-md-6 col-md-offset-3">
+					<h2>About This</h2>
+					<p class="lead">This is AI for quantitative finance website, Center for Statistical Information and Image Processing, Zhejiang University</p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+<!--         <div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInRight">
+					<img src="images/1.png" class="img-responsive" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni autem minus sint, commodi.</p>
+
+                </div>
+
+                <div class="col-sm-6 wow fadeInDown">
+                    <div class="accordion">
+                        <div class="panel-group" id="accordion1">
+                          <div class="panel panel-default">
+                            <div class="panel-heading active">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                  Leader
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+
+                            <div id="collapseOne1" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                  <div class="media accordion-inner">
+                                        <div class="pull-left">
+                                            <img class="img-responsive" src="images/lcg.jpg" width=160px>
+                                        </div>
+                                        <div class="media-body">
+                                             <h4>Chunguang Li</h4>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                        </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                  Lorem ipsum dolor sit amet
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+									3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+									Brunch 3 wolf moon tempor.<br>
+									
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									non cupidatat skateboard dolor brunch.</p>
+								</div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                                  Lorem ipsum dolor sit amet
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseThree1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+								3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								Brunch 3 wolf moon tempor.<br>
+								
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+								non cupidatat skateboard dolor brunch.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                                  Lorem ipsum dolor sit amet
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseFour1" class="panel-collapse collapse">
+								<div class="panel-body">
+								   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+									3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+									Brunch 3 wolf moon tempor.<br>
+									
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									non cupidatat skateboard dolor brunch.</p>
+								</div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
-                <div id="siiptop2">
-                    <div class="siiplogo"><h1 style="color:black;">统计信息与图像处理研究中心</h1></div>
-                    <div class="siiptopnav">
-                        <ul class="siiptopnavlist siiptopnavlist2" >
-                            <li>
-                                <a href="#home" style="color: black">Home</a>
-                            </li>
-                            <li>
-                                <a href="#team" style="color: black">Team</a>
-                            </li>
-                            <li>
-                                <a href="#work" style="color: black">Work</a>
-                            </li>
-                            <li>
-                                <a href="#contact" style="color: black">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
 
             </div>
-
-            <div id="home">
-                <div class="description">
-                    <h2 id="slogan">统计信息与图像处理中心欢迎您</h2>
-                    <div class="line"></div>
-                    <h3 id="slogan_en"><b>Center for Statistical Information and Image Processing, Zhejiang University</b></h3>
-                </div>
-            </div>
-
-            <div class="clear" ></div>
+        </div> --><!--/.container-->
+    </section><!--/#about-->
 
 
-            <div id="team">
-                <div class="title"><h2>Team</h2></div>
-                <ul class="row1">
-                    <li class="teacher imgholder">
-                        <span class="rotate">
-                            <img id="lcg" class="labmember" src="./images/labmembers/lcg.jpg")>
-                        </span>
-                        <a href="http://person.zju.edu.cn/cgli/573648.html" target="_blank"><p>Chunguang LI Professor</p></a>
-                    </li>
-                    <li class="teacher imgholder">
-                        <span class="rotate">
-                            <img id="ly" class="labmember" src="./images/labmembers/ly.jpg")>
-                        </span>
-                        <a href="http://person.zju.edu.cn/yliu" target="_blank"><p>Ying LIU Associa Professor</p></a>
-                    </li>
-                </ul>
-                <ul class="row2">
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="lzt" class="labmember" src="./images/loading3.gif")>
-                        </span>
-                        <p>Zhaoting LIU PD</p>
-                    </li>
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="ygd" class="labmember" src="./images/loading3.gif")>
-                        </span>
-                        <p>Guodong YE PD</p>
-                    </li>
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="hjh" class="labmember" src="./images/labmembers/hjh.jpg")>
-                        </span>
-                        <p>Junhao HUA D4</p>
-                    </li>
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="why" class="labmember" src="./images/labmembers/why.png")>
-                        </span>
-                        <p>Heyu Wang D3</p>
-                    </li>
-                </ul>
-                <ul class="row3">
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="wsn" class="labmember" src="./images/labmembers/wsn.jpg")>
-                        </span>
-                        <p>Shengnan WANG D3</p>
-                    </li>
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="xz" class="labmember" src="./images/labmembers/xz.jpg")>
-                        </span>
-                        <p>Zhen XU D2</p>
-                    </li>
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="csc" class="labmember" src="./images/labmembers/csc.jpg")>
-                        </span>
-                        <p>Sicong CHEN D1</p>
-                    </li>
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="lh" class="labmember" src="./images/labmembers/lh.jpg")>
-                        </span>
-                        <p>Huan Liu D0</p>
-                    </li>
-                </ul>
-                <ul class="row4">
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="mxd" class="labmember" src="./images/labmembers/mxd.jpg")>
-                        </span>
-                        <p>Xuedan MIAO M2</p>
-                    </li>
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="qzj" class="labmember" src="./images/labmembers/qzj.jpg")>
-                        </span>
-                        <p>Zhengjie QUAN M1</p>
-                    </li>
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="hss" class="labmember" src="./images/labmembers/hss.jpg")>
-                        </span>
-                        <p>Shengshuai HUANG M1</p>
-                    </li>
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="zyf" class="labmember" src="./images/labmembers/zyf.jpg")>
-                        </span>
-                        <p>Yifan ZHAI M0</p>
-                    </li>
-                </ul>
-                <ul class="row5">
-                    <li class="student imgholder">
-                        <span class="rotate">
-                            <img id="wt" class="labmember" src="./images/labmembers/wt1.jpg")>
-                        </span>
-                        <p>Tao WANG M0</p>
-                    </li>
-                </ul>
-                <p style="font-size: small;text-align: center">* PD: Postdoc; Dn: nth year doctoral degree student; Mn: nth year master degree student; Bn: nth year bachelor degree student participated in our lab research; VS: visiting scholar.</p>
-            </div>
-
-            <div class="clear" ></div>
-            <div class="split"></div>
-
-            <div id="work">
-                <div class="title"><h2>Work</h2></div>
-                <ul id="worklist">
-                    <li class="workitem" id="distributed">
-                        <h3><b>分布式信息处理</b></h3>
-                        <p id="a">
-                            分布式信息处理研究数据分布在不同节点上，
-                            无法收集到一起的情况下的信息挖掘方法，
-                            是无线传感器网络、大数据等领域的共性科学问题，
-                            是网络信息处理的一种重要方式。
-                            本课题系统地发展分布式信息处理方法。
-                        </p>
-                        <div class="clear" ></div>
-                        <img src="./images/works/distributed.png">
-                    </li>
-
-                    <li class="workitem" id="hash">
-                        <h3><b>图像检索</b><a href="/irs" target="_blank" style="color: black">(演示)</a></h3>
-                        <p>在“大数据”时代，海量的图像存储和比对变得困难，
-                            使得传统的图像检索方法面临着极大的挑战。
-                            哈希学习将原始数据映射成二进制串的形式，
-                            具有存储空间小，检索速度快、计算复杂度低的特点。
-                            本课题研究基于哈希学习和优化方法的图像检索。
-                        </p>
-                        <div class="clear" ></div>
-                        <img src="./images/works/hash.png">
-                    </li>
-
-                    <li class="workitem" id="encrypt">
-                        <h3><b>加密域信息处理</b></h3>
-                        <p>在云计算中，用户由于自身计算资源有限，
-                            需将信息处理任务外包到云服务器上处理。
-                            出于隐私保护的考虑，用户只提供加密的数据给云端，
-                            云端需在加密域进行信息处理。
-                            类似的加密域信息处理问题在多方计算等场景中也广泛存在。
-                            本课题研究加密域的信息处理方法和协议。
-                        </p>
-                        <div class="clear" ></div>
-                        <img src="./images/works/encrypt.jpg">
-                    </li>
-
-                    <li class="workitem" id="funding">
-                        <h3><b>项目资助</b></h3>
-                        <p>国家自然科学基金重点、面上项目；国家青年拔尖人才计划；浙江省杰青项目等。</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="clear" ></div>
-            <div class="split"></div>
-
-<!--            <div id="project">
-                <div class="title"><h2>Projects</h2></div>
-                <ul id="projectlist">
-                    <li class="projectitem"></li>
-                </ul>
-            </div> -->
-
-            <div id="contact">
-                <div class="title"><h2>Contact</h2></div>
-                <p style="text-align: center">浙江大学玉泉校区行政楼</p>
-            </div>
 
 
-            <a href="#Top"><div id="toTop"></div></a>
-            <div class="clear" ></div>
 
-            <div class="footer">
-                <div id="link_holder" >
-                    <ul id="footer-links">
-                        <li><a> About us</a> </li>
-                        <li><a href="#home">Center for Statistical Information and Image Processing, Zhejiang University</a></li>
-                    </ul>
-                </div>
-                <div id="copyright">
-                    <p>Copyright &copy; 2016.浙江大学统计信息与图像处理研究中心 All rights reserved</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- 	<section id="portfolio">
+		<div class="container">
+			<div class="center">
+				<div class="col-md-6 col-md-offset-3">
+					<h2>Portfolio</h2>
+					<hr>					
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+				</div>
+			</div>
+		</div>
+	
+        <div class="container">
+			<div class="col-lg-12">		
+				<ul class="portfolio-filter text-center">
+					<li><a class="btn btn-default active" href="#" data-filter="*">All Works</a></li>
+					<li><a class="btn btn-default" href="#" data-filter=".bootstrap">Creative</a></li>
+					<li><a class="btn btn-default" href="#" data-filter=".html">Photography</a></li>
+					<li><a class="btn btn-default" href="#" data-filter=".wordpress">Web Development</a></li>
+				</ul><!--/#portfolio-filter--/>
 
-    <script>
-        $(function() {
-            //             $("html,body").animate({scrollTop: $("#home").offsetTop}, 1000);
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('#siipnav').fadeIn();
-                    $('#siiptopmask').fadeIn();
-                    $('#siipheader').css({"height": "80px"});
-                    $('#siiptop1').fadeOut();
-                    $('#siiptop2').fadeIn();
-                }
-                else {
-                    $('#siipnav').fadeOut();
-                    $('#siiptopmask').fadeOut();
-                    $('#siipheader').css({"height": "100px"});
-                    $('#siiptop2').fadeOut("fast");
-                    $('#siiptop1').fadeIn("slow");
+				<div class="row">
+					<div class="portfolio-items">
+						<div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+							<div class="recent-work-wrap">
+								<img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+								<div class="overlay">
+									<div class="recent-work-inner">
+										<h3><a href="#">Business theme</a></h3>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+										<a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+									</div> 
+								</div>
+							</div>
+						</div><!--/.portfolio-item--/>
 
-                }
-            });
-        });
+						<div class="portfolio-item joomla bootstrap col-xs-12 col-sm-4 col-md-3">
+							<div class="recent-work-wrap">
+								<img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
+								<div class="overlay">
+									<div class="recent-work-inner">
+										<h3><a href="#">Business theme</a></h3>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+										<a class="preview" href="images/portfolio/full/item2.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+									</div> 
+								</div>
+							</div>          
+						</div><!--/.portfolio-item-/->
 
-        // $(document).ready(function () {
-        //     var w = $(document).width();
-        //     $('.siiptopnav').css({"margin-right":1200 - w -70});
-        // $(window).resize(function () {
-        //     var w = $(document).width();
-        //     $('.siiptopnav').css({"margin-right":1200 - w -70});
-        // });
-    </script>
-    <script>
-        $(function() {
-            $(window).scroll(function() {
-                if($(this).scrollTop() > 100) {
-                    $('#toTop').fadeIn();
-                }
-                else {
-                    $('#toTop').fadeOut();
-                }
-                if($(this).scrollTop() > 80) {
-                    $('.topform').css({"box-shadow":"1px 1px 2px rgb(122,122,122)", "border-bottom":""});
-                }else {
-                    $('.topform').css({"box-shadow":""});
-                }
-            });
-        });
-        var height = $(window).height();
-        $(document).ready(function () {
-            var h = $(document).height();
-            var footer = $(".footer");
-            if (h<height) {
-                footer.css({"top":height,"bottom":""});
-                $(".result_list").css({"padding-bottom":"100px"});
-            }
-        });
-    </script>
+						<div class="portfolio-item bootstrap wordpress col-xs-12 col-sm-4 col-md-3">
+							<div class="recent-work-wrap">
+								<img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
+								<div class="overlay">
+									<div class="recent-work-inner">
+										<h3><a href="#">Business theme</a></h3>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+										<a class="preview" href="images/portfolio/full/item3.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+									</div> 
+								</div>
+							</div>        
+						</div><!--/.portfolio-item-/->
+
+						<div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
+							<div class="recent-work-wrap">
+								<img class="img-responsive" src="images/portfolio/recent/item4.png" alt="">
+								<div class="overlay">
+									<div class="recent-work-inner">
+										<h3><a href="#">Business theme</a></h3>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+										<a class="preview" href="images/portfolio/full/item4.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+									</div> 
+								</div>
+							</div>           
+						</div><!--/.portfolio-item-/->
+			  
+						<div class="portfolio-item joomla html bootstrap col-xs-12 col-sm-4 col-md-3">
+							<div class="recent-work-wrap">
+								<img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
+								<div class="overlay">
+									<div class="recent-work-inner">
+										<h3><a href="#">Business theme</a></h3>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+										<a class="preview" href="images/portfolio/full/item5.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+									</div> 
+								</div>
+							</div>      
+						</div><!--/.portfolio-item-/->
+
+						<div class="portfolio-item wordpress html apps col-xs-12 col-sm-4 col-md-3">
+							<div class="recent-work-wrap">
+								<img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
+								<div class="overlay">
+									<div class="recent-work-inner">
+										<h3><a href="#">Business theme</a></h3>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+										<a class="preview" href="images/portfolio/full/item6.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+									</div> 
+								</div>
+							</div>         
+						</div><!--/.portfolio-item-/->
+
+						<div class="portfolio-item wordpress html col-xs-12 col-sm-4 col-md-3">
+							<div class="recent-work-wrap">
+								<img class="img-responsive" src="images/portfolio/recent/item7.png" alt="">
+								<div class="overlay">
+									<div class="recent-work-inner">
+										<h3><a href="#">Business theme</a></h3>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+										<a class="preview" href="images/portfolio/full/item7.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+									</div> 
+								</div>
+							</div>          
+						</div><!--/.portfolio-item-/->
+
+						<div class="portfolio-item wordpress html bootstrap col-xs-12 col-sm-4 col-md-3">
+							<div class="recent-work-wrap">
+								<img class="img-responsive" src="images/portfolio/recent/item8.png" alt="">
+								<div class="overlay">
+									<div class="recent-work-inner">
+										<h3><a href="#">Business theme</a></h3>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+										<a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+									</div> 
+								</div>
+							</div>          
+						</div><!--/.portfolio-item-/->
+					</div>
+				</div>
+			</div>
+		</div>
+    </section><!--/#portfolio-item-/->
+	
+	<section id="features">
+		<div class="container">
+			<div class="row">
+				<div class="center">
+					<div class="col-md-6 col-md-offset-3">
+						<h2>Features</h2>
+						<hr>					
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+					</div>
+				</div>
+				
+				<div class="col-md-4 wow fadeInLeft">
+					<h3>Responsive</h3>
+					<img src="images/portfolio/recent/item4.png" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+					non cupidatat skateboard dolor brunch.</p>
+				</div>
+				
+				<div class="col-md-4 wow fadeInUp">
+					<h3>Web Design</h3>
+					<img src="images/portfolio/recent/item5.png" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+					non cupidatat skateboard dolor brunch.</p>
+				</div>
+				
+				<div class="col-md-4 wow fadeInRight">
+					<h3>Easy Customize</h3>
+					<img src="images/portfolio/recent/item6.png" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+					non cupidatat skateboard dolor brunch.</p>
+				</div>
+			</div>
+		</div>		
+	</section> -->
+	
+	
+		<div class="map">
+			<!-- <div id="google-map" data-latitude="30.269178" data-longitude="120.131865"></div> -->
+			<iframe id = "baidu-map" src="map.html" frameborder="0" scrolling="no"></iframe>
+		</div>
+	<section id="contact">
+		<div class="contact-page">
+			<div class="container">
+				<div class="center">        
+					<h2>Contact Us</h2>						
+				</div> 
+				<div class="row contact-wrap"> 	
+					<div class="col-md-8 col-md-offset-2">	
+						<div id="sendmessage">Your message has been sent. Thank you!</div>
+						<div id="errormessage"></div>
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="form-group">
+								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+								<div class="validation"></div>
+							</div>
+
+							<div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
+						</form>			
+					</div>	
+				</div><!--/.row-->
+			</div><!--/.container-->
+		</div><!--/#contact-page-->		
+	</section>
+	
+	<footer id="footer" class="midnight-blue">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="text-center">
+						<a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+					</div>
+					&copy; Center for Statistical Information and Image Processing, Zhejiang University
+					<p>All Rights Reserved.</p>
+				</div>
+
+				<div class="top-bar"></div>
+			</div>
+		</div>
+	</footer><!--/#footer-->
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script> 
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>	
+	<script src="js/main.js"></script>
+    <script src="contactform/contactform.js"></script>
+    
 </body>
 </html>
