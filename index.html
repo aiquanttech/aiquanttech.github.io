@@ -160,5 +160,15 @@
 	<script src="js/main.js"></script>
 	<script src="contactform/contactform.js"></script>
 
+	<script>
+		var Width = window.innerWidth;
+		var mapWidth = document.getElementById('baidu-map');
+		mapWidth.setAttribute('width', Width*0.7);
+
+		window.onresize = function(){
+			var Width = window.innerWidth;
+			mapWidth.setAttribute('width', Width*0.7);
+		}
+	</script>
 </body>
 </html>

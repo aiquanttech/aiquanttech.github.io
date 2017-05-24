@@ -495,22 +495,15 @@ a.accordion-toggle  i{
 
 /* --- Map --- */
 .map{
-	position:relative;
-	padding-top:50px;
-	margin:50px auto;
-	text-align: center;
-}
-/* google map */
-#google-map{
-    position:relative;
-    height: 400px;
+  position:relative;
+  padding-top:50px;
+  margin:50px auto;
+  text-align: center;
+  width: 100%;
 }
 
-#baidu-map{
-    position:relative;
-    height: 400px;
-    width: 697px;
-    margin: 0 auto;
+#baidu-map {
+  height: 400px;
 }
 
 .contact-page{
