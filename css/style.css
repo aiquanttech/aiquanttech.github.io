@@ -140,6 +140,10 @@ p {
     outline: 0;
 }
 
+
+#home {
+  margin-top: 76px;
+}
 .slider {
 	padding-top:50px;
 }
@@ -210,14 +214,13 @@ p {
 
 #wisdom {
   margin-top: 50px;
+  text-align:center;
 }
 
-#wisdom p{
-  font-size: 25px;
-  font-family: centuryschoolbook;
+#wisdom img{
+  position: relative;
   text-align:center;
-  color:#A1A1A1;
-  padding: 5px 0;
+  margin:0 auto;
 }
 
 #portfolio .lead {
@@ -399,7 +402,8 @@ p {
 }
 
 #about  {
-	margin-top:80px;
+  padding-top: 150px;
+	margin-top:-70px;
 	margin-bottom:40px;
 }
 
@@ -409,8 +413,13 @@ p {
 	margin-bottom:50px;
 }
 
-#about  img {	
-	margin-bottom:40px;
+#about  img { 
+  margin-bottom:40px;
+}
+
+#about  p {	
+  font-size: 25px;
+  line-height:35px;
 }
 
 .panel-default{
@@ -484,29 +493,40 @@ a.accordion-toggle  i{
   color: #fff;
 }
 
-#features {
-	margin-top:50px;
-	padding:50px;
+#strategy {
+  padding-top: 150px;
+  margin-top: -100px;
+	padding-bottom:50px;
 	text-align:center;
 }
 
-#features .lead {
+#strategy .lead {
 	text-align:center;
 	font-size:18px;
 	margin-bottom:50px;
 }
 
-#features img {
-	border-radius:30%;
+#strategy img {
+	border-radius:10%;
 	margin-top:30px;
 	margin-bottom:40px;
 }
 
+
+
+#contact {
+  padding-top: 80px;
+  margin-top: -150px;
+}
+
+
+#mail {
+  text-align:center;
+}
 /* --- Map --- */
 .map{
   position:relative;
-  padding-top:50px;
-  margin:50px auto;
+  margin: 50px auto;
   text-align: center;
   width: 100%;
 }
@@ -517,7 +537,7 @@ a.accordion-toggle  i{
 
 .contact-page{
   padding-top: 80px;
-  background:#eee;
+  /*background:#eee;*/
   margin-top:-10px;
 }
 
