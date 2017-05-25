@@ -142,7 +142,8 @@ p {
 
 
 #home {
-  margin-top: 76px;
+  margin-top: -74px;
+  padding-top: 150px;
 }
 .slider {
 	padding-top:50px;
@@ -521,6 +522,7 @@ a.accordion-toggle  i{
 
 
 #mail {
+  margin-top: 50px;
   text-align:center;
 }
 /* --- Map --- */
