@@ -1,28 +1,25 @@
-/*
-    Theme Name: OnePage
-    Theme URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-*/
-/* ==== Google font ==== */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900);
-@import url('https://fonts.googleapis.com/css?family=Ek+Mukta:400,600,700');
+
+@font-face {
+  font-family: centuryschoolbook;
+  src: url(‘fonts/centuryschoolbook.ttf’);
+}
+
+
 
 body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Ek Mukta', sans-serif;
-	font-weight: 300;
-    color: #666;
-    background-color: #fff;
-	font-size: 16px;
-    line-height: 1.6em;
-	font-weight: 400;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #666;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 400;
 }
 
 p {
-	font-size:16px;
-
+  font-size:16px;
 }
 
 .btn-primary {
@@ -203,12 +200,24 @@ p {
 }
 
 .center h2{
-  font-size: 40px;
+  font-size: 35px;
+  font-family: 文泉驿微米黑,微软雅黑, Monaco, "Courier New", Courier, monospace;;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   text-align:center;
   color:#000;
-  text-transform:uppercase;
+}
+
+#wisdom {
+  margin-top: 50px;
+}
+
+#wisdom p{
+  font-size: 25px;
+  font-family: centuryschoolbook;
+  text-align:center;
+  color:#A1A1A1;
+  padding: 5px 0;
 }
 
 #portfolio .lead {
