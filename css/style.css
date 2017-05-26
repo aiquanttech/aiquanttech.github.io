@@ -508,12 +508,29 @@ a.accordion-toggle  i{
 }
 
 #strategy img {
-	border-radius:10%;
+	/*border-radius:10%;*/
 	margin-top:30px;
 	margin-bottom:40px;
+  max-width: 60%;
+  /*width: 100%;*/
 }
 
+#strategy-list {
+  position: relative;
+  display: block;
+}
 
+#strategy-list div {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#strategy-list h3 {
+  /*width: inherit;*/
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
 
 #contact {
   padding-top: 80px;
