@@ -106,7 +106,7 @@
 
 
 	<section id="strategy">
-		<div class="container">
+		<div class="container hiddencomp">
 			<div class="row">
 				<div class="center">
 					<div class="col-md-6 col-md-offset-3">
@@ -117,20 +117,19 @@
 
 
 					<div id="strategy-list">
-						<h3></h3>
-						<div>
+						<div id="strategy-img-1">
 							<h3><b>配对切换</b></h3>
-							<img src="images/strategy/配对切换.png" alt="">
+							<img src="images/strategy/配对切换.png" alt="" class="strategy-img">
 							<p></p>
 						</div>
 
-						<div>
+						<div id="strategy-img-2">
 							<h3><b>概率预测</	b></h3>
 							<img src="images/strategy/概率预测.jpg" alt="">
 							<p></p>
 						</div>
 
-						<div>
+						<div id="strategy-img-3">
 							<h3>more to come soon ...</h3>
 						</div>
 					</div>
@@ -189,12 +188,20 @@
 	<script src="js/main.js"></script>
 	<script>
 		var Width = window.innerWidth;
+		var Height = window.innerHeight;
+
 		var mapWidth = document.getElementById('baidu-map');
 		var wisdom = document.getElementById('wisdom-img');
 		mapWidth.setAttribute('width', Width*0.7);
 		if(Width<631) {
 			wisdom.setAttribute('width', Width*0.7);
 		}
+
+		$(document).ready(function () {
+			var wisdomPaddingValue = (Height-$('#wisdom-img').height() - 485)/2;
+			$('#wisdom-img').css({"padding-top": wisdomPaddingValue, "padding-bottom": wisdomPaddingValue});
+			// $('#about').css({"margin-top": 120+2*(wisdomPaddingValue-50)});
+		});
 
 		window.onresize = function(){
 			var Width = window.innerWidth;
@@ -203,6 +210,22 @@
 				wisdom.setAttribute('width', Width*0.7);
 			}
 		}
+
+
+		$(window).scroll(function() {
+
+			if ($(this).scrollTop()>30) {
+				$('#about').animate({paddingTop:"130px"},"slow");
+			}
+
+			if ($(this).scrollTop()>800) {
+				$('#strategy').animate({paddingTop:"130px"},"slow");
+			}			
+
+			if ($(this).scrollTop()>1850) {
+				$('#contact').animate({paddingTop:"60px"},"slow");
+			}
+		});
 	</script>
 </body>
 </html>
