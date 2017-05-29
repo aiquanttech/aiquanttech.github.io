@@ -299,18 +299,23 @@
     <script src="js/jquery.scrollify.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
-    	$(function() {
-    	$('.panel').css({'height': $(window).height()});
-		$.scrollify({
-			section: '.panel'
-		});
+
+	$(function() {
+		var width = document.body.clientWidth;
+		if(width>720) {
+			$('.panel').css({'height': $(window).height()});
+			$.scrollify({
+				section: '.panel'
+			});
+		};
+
 	});
 
-    	$('.gallery-box').click(function(){
-    		var path = $(this).attr("data-src");
-    		$('#galleryImage').attr('src',path);
-    	}
-    		);
+	$('.gallery-box').click(function(){
+			var path = $(this).attr("data-src");
+			$('#galleryImage').attr('src',path);
+		}
+			);
 	</script>
 
 </body>
