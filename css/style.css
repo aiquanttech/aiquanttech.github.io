@@ -254,6 +254,7 @@ a:focus {
 /* misc */
 hr {
   margin-top: 10px;
+  /*border-top: 1px solid red;*/
 }
 
 /* margins */
@@ -313,8 +314,8 @@ hr {
 ============================ */
 
 #home {
-  /*background-color: #67b0d1;*/
-  background-color: rgb(24,57,84);
+  /*background-color: rgb(24,57,84);*/
+  background-color: rgb(4,4,4);
   padding: 0;
 }
 
@@ -354,6 +355,10 @@ blockquote.large:before {
 /* ===========================
 --- About
 ============================ */
+#about {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+  background-size: cover;
+}
 
 #intro p {
   font-size: 25px;
@@ -427,8 +432,15 @@ blockquote.large:before {
 
 
 /* ===========================
---- Services
+--- Strategy
 ============================ */
+
+#strategy {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/strategy-bg.jpg") fixed center center;
+  background-size: cover;
+
+}
+
 
 .service-icon {
 	margin-bottom: 20px;
@@ -439,10 +451,17 @@ blockquote.large:before {
 /* ===========================
 --- Contact
 ============================ */
+#contact {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/contact-bg.png") fixed center center;
+  background-size: cover;
+
+}
 
 #emailAddress {
   font-size: 20px;
+  margin-bottom: 20px;
 }
+
 #emailAddress img {
   margin-right: 20px;
 }
@@ -451,18 +470,24 @@ blockquote.large:before {
 --- Footer
 ============================ */
 
-footer {
-	text-align: center;
-	padding: 30px 0 ;
-	background-color: #444444;
+#footer {
+
+  font-size: 20px;
+  color: #67b0d1
 }
 
-footer p {
-	color: #f8f8f8;
-}
 
 .vertical-center {
   margin-top: 100px;
+}
+
+
+
+#totopicon {
+  position: fixed;
+  margin-right: 30px;
+  z-index: 10001;
+  background-color: #444444;
 }
 
 
@@ -618,10 +643,6 @@ Parallax
     background: #ffcc00;
 }
 
-#map {
-	height: 500px;
-}
-
 
 .btn-skin:hover,
 .btn-skin:focus,
@@ -718,7 +739,9 @@ Parallax
 	
 }
 
-
+#map {
+  margin-top:35px; 
+}
 #baidu-map {
   height: 300px;
 }
