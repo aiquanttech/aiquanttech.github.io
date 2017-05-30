@@ -270,8 +270,6 @@ hr {
 ============================ */
 
 .home-section {
-  padding-top: 110px;
-  padding-bottom: 110px;
   display:block;
   position:relative;
   z-index:120;
@@ -320,37 +318,22 @@ hr {
 }
 
 .slogan {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
 }
-
-.slogan blockquote {
+#wisdom {
+  margin-top: 40px;
   font-family: ChaparralPro;
   font-size: 30px;
   color: #fff;
-  line-height:2em
+  line-height:2em;
+  /*vertical-align: middle;*/ 
 }
-
 
 .textright {
   text-align: right;
   border-left: 0;
 }
 
-#author {
-  text-align: right;
-}
-
-.large {
-  border: 0;
-}
-
-blockquote.large:before {
-  font-size:50px;
-  font-family: FontAwesome;
-  content: "\f10d";
-  margin-right:20px;
-  /*color:#fff;*/
-}
 
 /* ===========================
 --- About
@@ -441,6 +424,9 @@ blockquote.large:before {
 
 }
 
+#strategy h3 {
+  margin-top: 10px;
+}
 
 .service-icon {
 	margin-bottom: 20px;
@@ -674,7 +660,7 @@ Parallax
 
 /* Media queries */
 
-@media(min-width:767px) {
+@media(min-width:719px) {
 
     .navbar {
         padding: 20px 0;
@@ -699,9 +685,15 @@ Parallax
         font-size: 100px;
     }
 
+  .home-section {
+    padding-bottom: 110px;
+    padding-top: 110px;
+  }
+
+
 }
-@media (max-width:768px) {
-	
+@media (max-width:720px) {
+
 	.team.boxed-grey {
 		margin-bottom: 30px;
 	}
@@ -710,7 +702,20 @@ Parallax
 		margin-bottom: 30px;
 	}
 
-	
+  #wisdom {
+    font-size:20px;
+  }
+
+  .section-heading h2{
+      font-size: 30px;
+      margin: 20px 0;
+    }
+
+  .home-section {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
 }
 
 @media (max-width:480px) {
@@ -736,6 +741,9 @@ Parallax
 		border-radius: 50%;
 		font-size: 20px;
 	}
+  #wisdom {
+    font-size:15px;
+  }
 	
 }
 
@@ -746,9 +754,7 @@ Parallax
   height: 300px;
 }
 
-#wisdom {
-  margin-top: 40px;
-}
+
 
 #AIQF {
   font-family: Dylalight;
@@ -909,4 +915,22 @@ Parallax
         padding: 100px 0;
     }
 
+}
+
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px;
+    height: 100%;
+}
+
+.modal-dialog {
+    display: inline-block;
+    vertical-align: middle;
 }
