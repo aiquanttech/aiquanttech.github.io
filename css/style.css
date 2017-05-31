@@ -645,7 +645,7 @@ Parallax
 
 @media(min-width:719px) {
 
-/*    #strategy {
+    #strategy {
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/strategy-bg.jpg") fixed center center;
     background-size: cover;
     }
@@ -660,7 +660,7 @@ Parallax
       background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/about-bg.jpg") fixed center center;
       background-size: cover;
     }
-*/
+
 
     .navbar {
         padding: 20px 0;
