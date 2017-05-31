@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
 	<meta charset="utf-8">
@@ -16,6 +16,7 @@
 	<link href="color/default.css" rel="stylesheet">
 	<link href="css/ionicons.min.css" rel="stylesheet" />
 	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
 </head>
 
@@ -47,7 +48,8 @@
 		</div>
 	</nav>
 
-	<section id="home" class="panel">
+<div id="pageContain">
+	<section id="home" class="panel section" data-section-name="">
 		<div class="slider">
 			<div id="about-slider">
 				<div id="carousel-slider" class="carousel slide" data-ride="carousel">
@@ -71,7 +73,7 @@
 						<i class="fa fa-angle-left"></i> 
 					</a>
 					
-					<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+					<a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
 						<i class="fa fa-angle-right"></i> 
 					</a>
 				</div> <!--/#carousel-slider-->
@@ -95,15 +97,15 @@
 				</div>
 			</div>
 		</div>
-		</section>
+	</section>
 
 	<!-- Section: about -->
-	<section id="about" class="home-section text-center panel">
+	<section id="about" class="home-section text-center panel section" data-section-name="">
 		<div class="heading-about">
 			<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.2s">
+					<div class="wow fadeInDown">
 					<div class="section-heading">
 						<h2>关于我们</h2>
 						<i class="fa fa-2x fa-angle-down"></i>
@@ -123,7 +125,7 @@
 
 			<div class="row">
 				<div class="col-xs-10 col-sm-10 col-md-10 col-xs-offset-1 col-md-offset-1 col-sm-offset-1">
-					<div class="wow bounceInUp" id="intro" data-wow-delay="0.2s">
+					<div class="wow fadeInUp" id="intro" data-wow-delay="0.2s">
 						<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AIQuant依托浙江大学科研团队，致力于人工智能量化交易策略研究。以企业价值及估值为标准建立股票池，以历史数据统计分析为基础挖掘内在规律，以机器学习和智能决策为方法制定统计意义上大概率胜的交易策略，从而获得长期超额收益。<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AIQuant欢迎各种形式的合作。
@@ -137,12 +139,12 @@
 	
 
 	<!-- Section: strategys -->
-	<section id="strategy" class="home-section text-center bg-gray panel">
+	<section id="strategy" class="home-section text-center panel section" data-section-name="">
 		<div class="heading-about">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-2">
-						<div class="wow bounceInDown" data-wow-delay="0.2s">
+						<div class="wow fadeInDown">
 							<div class="section-heading">
 								<h2>交易策略</h2>
 								<i class="fa fa-2x fa-angle-down"></i>
@@ -194,7 +196,7 @@
 
 				<div class="no-gutter wow fadeInUp" data-wow-delay="0.2s">
 					<div class="col-lg-6 col-sm-6 col-lg-offset-3 col-sm-offset-3">
-						<h3 style="margin-top: 40px">more to come soon...</h3>
+						<h3 style="margin-top: 40px;text-transform: Lowercase">more to come soon...</h3>
 					</div>
 				</div>
 
@@ -204,12 +206,12 @@
 	<!-- /Section: strategys -->
 
 	<!-- Section: contact -->
-	<section id="contact" class="home-section text-center panel">
+	<section id="contact" class="home-section text-center panel section" data-section-name="">
 		<div class="heading-contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-2">
-						<div class="wow bounceInDown" data-wow-delay="0.4s">
+						<div class="wow fadeInDown">
 							<div class="section-heading">
 								<h2>联系我们</h2>
 								<i class="fa fa-2x fa-angle-down"></i>
@@ -224,45 +226,36 @@
 					</div>
 				</div>
 
-				<div class="row wow bounceInUp">
+				<div class="row wow fadeInUp">
 					<div class="col-lg-4 col-lg-offset-4">
 						<address id="emailAddress">
-							<img src="img/Mail.png" width="35px" >
+							<img src="img/mail.png" width="35px" >
 							<a href="mailto:aiquant@126.com?subject=AIQuant合作事宜">aiquant@126.com</a>
 						</address>
 					</div>
 				</div>
 
-				<div class="row wow bounceInUp" id="baidu-map">
+				<div class="row wow fadeInUp" id="baidu-map">
 					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
 			 			<div id="map"></div>
 					</div>
 				</div>
-<!-- 
+
 				<div class="row">
 					<div id="footer" class="navbar-absolute-bottom">
-						<p>&copy;Copyright 2017 - AIQuant. All rights reserved.</p>
+						<p>&copy;Copyright 2017 - <a href="#home">AIQuant</a>. All rights reserved.</p>
 					</div>
-				</div> -->
+				</div>
 
 			</div>
 		</div>
-
 	</section>
-
-	<div class="wow shake" id="totopicon" data-wow-delay="0.4s">
-		<div class="page-scroll marginbot-30">
-			<a href="#home" id="totop" class="btn btn-circle">
-				<i class="fa fa-angle-double-up animated"></i>
-			</a>
-		</div>
-	</div>
-
+</div>
 	<div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
-					<img src="" id="galleryImage" class="img-responsive" />
+					<img src="" id="galleryImage" class="img-responsive"/>
 					<p>
 						<br/>
 						<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
@@ -272,7 +265,6 @@
 		</div>
 	</div>
 
-	<!-- Core JavaScript Files -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>	
@@ -280,10 +272,9 @@
 	<script src="js/wow.min.js"></script>
 	<!-- Custom Theme JavaScript -->
 	<script src="js/jquery.scrollify.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
 	<script src="js/custom.js"></script>
-
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SXe0uIdH58zRjRmFoDZt8wZbsHwYGGnk"></script>
-
 	<script>
 
 	$(function() {
@@ -291,7 +282,17 @@
 		if(width>720) {
 			$('.panel').css({'height': $(window).height()});
 			$.scrollify({
-				section: '.panel'
+				section: '.panel',
+				scrollbars: false,
+				sectionName : "section-name",
+				easing: "easeOutExpo",
+				scrollSpeed: 800,
+				offset : 0,
+				standardScrollElements: "",
+				setHeights: true,
+				overflowScroll: true,
+				updateHash: false,
+				touchScroll:true
 			});
 		} else {
 			$('.panel').css({'height': ''});
@@ -304,7 +305,9 @@
 		if(width>720) {
 			$('.panel').css({'height': $(window).height()});
 			$.scrollify({
-				section: '.panel'
+				section: '.panel',
+				scrollbars: false,
+				sectionName : "section-name"
 			});
 		}else{
 			$('.panel').css({'height': ''});
@@ -316,6 +319,9 @@
 			$('#galleryImage').attr('src',path);
 		} 
 			);
+
+
+
 
 	// map
 	function initMap(){
@@ -373,7 +379,6 @@
 
 
 	</script>
-
 </body>
 
 </html>
