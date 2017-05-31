@@ -752,6 +752,24 @@ pre code {
     width: 1170px;
   }
 }
+@media (min-width: 1500px) {
+  .container {
+    width: 1470px
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    width: 1770px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+    width: 1970px;
+  }
+}
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;

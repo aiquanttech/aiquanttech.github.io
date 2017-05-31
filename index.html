@@ -14,8 +14,8 @@
 	<link href="css/animate.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/ionicons.min.css" />
-	<link rel="shortcut icon" href="img/favicon.ico" />
+	<link href="css/ionicons.min.css" rel="stylesheet" />
+	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 </head>
 
@@ -32,7 +32,7 @@
 					<i class="fa fa-bars"></i>
 				</button>
 				<a class="navbar-brand" href="index.html">
-					<img src="img/logo.png" height="65px" style="padding-bottom: 10px">
+					<img src="img/logo.png" id="logo">
 				</a>
 			</div>
 
@@ -64,9 +64,6 @@
 						</div>
 						<div class="item">
 							<img src="img/slide2.jpg" class="img-responsive" alt=""> 
-						</div> 
-						<div class="item">
-							<img src="img/slide3.jpg" class="img-responsive" alt=""> 
 						</div> 
 					</div>
 					
@@ -165,9 +162,9 @@
 			<div class="row">
 				<div class="no-gutter wow fadeInLeft" data-wow-delay="0.2s">
 					<div class="col-lg-5 col-sm-5 col-lg-offset-1 col-sm-offset-1">
-						<h3>配对切换</h3>
-						<a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/strategy/配对切换.png">
-							<img src="img/strategy/配对切换.png" class="img-responsive" alt="Image 1">
+						<h3>概率预测</h3>
+						<a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/strategy/概率预测.jpg">
+							<img src="img/strategy/概率预测.jpg" class="img-responsive" alt="Image 1">
 							<div class="gallery-box-caption">
 								<div class="gallery-box-content">
 									<div>
@@ -181,9 +178,9 @@
 
 				<div class="no-gutter wow fadeInRight" data-wow-delay="0.2s">
 					<div class="col-lg-5 col-sm-5">
-						<h3>概率预测</h3>
-						<a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/strategy/概率预测.jpg">
-							<img src="img/strategy/概率预测.jpg" class="img-responsive" alt="Image 2">
+						<h3>配对切换</h3>
+						<a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/strategy/配对切换.png">
+							<img src="img/strategy/配对切换.png" class="img-responsive" alt="Image 2">
 							<div class="gallery-box-caption">
 								<div class="gallery-box-content">
 									<div>
@@ -194,6 +191,13 @@
 						</a>
 					</div>
 				</div>
+
+				<div class="no-gutter wow fadeInUp" data-wow-delay="0.2s">
+					<div class="col-lg-6 col-sm-6 col-lg-offset-3 col-sm-offset-3">
+						<h3 style="margin-top: 40px">more to come soon...</h3>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</section>
@@ -224,14 +228,14 @@
 					<div class="col-lg-4 col-lg-offset-4">
 						<address id="emailAddress">
 							<img src="img/Mail.png" width="35px" >
-							<a href="mailto:#">aiquant@126.com</a>
+							<a href="mailto:aiquant@126.com?subject=AIQuant合作事宜">aiquant@126.com</a>
 						</address>
 					</div>
 				</div>
 
-				<div class="row wow bounceInUp" id="map">
-					<div class="col-lg-10 col-lg-offset-1">
-			 			<iframe class="col-lg-12" id = "baidu-map" src="map.html" frameborder="0" scrolling="no"></iframe>
+				<div class="row wow bounceInUp" id="baidu-map">
+					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+			 			<div id="map"></div>
 					</div>
 				</div>
 <!-- 
@@ -277,6 +281,9 @@
 	<!-- Custom Theme JavaScript -->
 	<script src="js/jquery.scrollify.min.js"></script>
 	<script src="js/custom.js"></script>
+
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SXe0uIdH58zRjRmFoDZt8wZbsHwYGGnk"></script>
+
 	<script>
 
 	$(function() {
@@ -309,6 +316,62 @@
 			$('#galleryImage').attr('src',path);
 		} 
 			);
+
+	// map
+	function initMap(){
+		createMap();//创建地图
+		setMapEvent();//设置地图事件
+		addMapControl();//向地图添加控件
+		addMapOverlay();//向地图添加覆盖物
+	}
+	function createMap(){ 
+		map = new BMap.Map("map"); 
+		map.centerAndZoom(new BMap.Point(120.131899,30.26923),19);
+	}
+	function setMapEvent(){
+		map.enableKeyboard();
+		map.enableDragging();
+		map.enableDoubleClickZoom()
+	}
+	function addClickHandler(target,window){
+		target.addEventListener("click",function(){
+		target.openInfoWindow(window);
+		});
+	}
+	function addMapOverlay(){
+		var markers = [
+		{content:"",title:"AIQuant",imageOffset: {width:-46,height:-21},position:{lat:30.26921,lng:120.131787}}
+		];
+		for(var index = 0; index < markers.length; index++ ){
+		var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+		var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+			imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+		})});
+		var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+		var opts = {
+			width: 200,
+			title: markers[index].title,
+			enableMessage: false
+		};
+		var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+		marker.setLabel(label);
+		addClickHandler(marker,infoWindow);
+		map.addOverlay(marker);
+		};
+	}
+    //向地图添加控件
+	function addMapControl(){
+		var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:1});
+		map.addControl(navControl);
+		var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+		map.addControl(overviewControl);
+	}
+	var map;
+      initMap();
+
+
+
+
 	</script>
 
 </body>
