@@ -301,15 +301,16 @@ hr {
 }
 
 .slogan {
-  /*padding-top: 50px;*/
+  /*margin-top: 50px;*/
 }
+
 #wisdom {
-  margin-top: 40px;
   font-family: ChaparralPro;
   font-size: 30px;
   color: #fff;
   line-height:2em;
-  /*vertical-align: middle;*/ 
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .textright {
@@ -399,7 +400,7 @@ hr {
 
 
 #strategy h3 {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .service-icon {
@@ -437,7 +438,7 @@ hr {
   position:absolute;
   margin: auto;
   margin-left: -5px;
-  margin-bottom: -5px;
+  margin-bottom: -20px;
   left: 0; 
   bottom: 0; 
   right: 0;
@@ -746,9 +747,7 @@ Parallax
     height: 200px;
   }  
 
-  #baidu-map {
-    margin-bottom: 40px;
-  }
+
 }
 
 @media (max-width:480px) {

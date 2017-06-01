@@ -81,16 +81,13 @@
 		<div class="slogan">
 			<div class="container">
 				<div class="row">
-					<div class="flyLeft fadeInLeftBig col-xs-12 col-sm-12 col-md-8 col-md-offset-1">
+					<div class="flyLeft fadeInLeftBig col-xs-12 col-sm-12 col-md-12">
 						<blockquote class="textright" id="wisdom">
 							All knowledge is, in final analysis, history.<br>
 							All sciences are, in the abstract, mathematics.<br>
 							All judgements are, in their rationale, statistics.<br>
 							<cite>—C.R. Rao</cite>
 						</blockquote>
-					</div>
-					<div class="span6 aligncenter flyRight">
-						<i class="icon-coffee icon-10x"></i>
 					</div>
 				</div>
 			</div>
@@ -176,7 +173,7 @@
 					<div class="col-lg-5 col-sm-5">
 						<h3>配对切换</h3>
 						<a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/strategy/配对切换.jpg">
-							<img src="img/strategy/配对切换.png" class="img-responsive" alt="Image 2">
+							<img src="img/strategy/配对切换.jpg" class="img-responsive" alt="Image 2">
 							<div class="gallery-box-caption">
 								<div class="gallery-box-content">
 									<div>
@@ -268,8 +265,11 @@
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SXe0uIdH58zRjRmFoDZt8wZbsHwYGGnk"></script>
 	<script>
 
+
+
 	$(function() {
-		var width = document.body.clientWidth;
+		var width = $(window).width();
+
 		if(width>720) {
 			$('.panel').css({'height': $(window).height()});
 			$.scrollify({
@@ -285,14 +285,23 @@
 				updateHash: false,
 				touchScroll:true
 			});
+
+			var height = $(window).height();
+			var sloganHeight = $(".slogan").height();
+			var sliderHeight = $(".slider").height();
+			var sloganMargin = (height-sloganHeight-sliderHeight)/2;
+			if(sloganMargin>0) {
+				$('.slogan').css({'margin-top': sloganMargin});
+			}
 		} else {
 			$('.panel').css({'height': ''});
+			$('.slogan').css({'margin-top': "5px"});
 		}
 
 	});
 
 	$(window).resize(function () {
-		var width = document.body.clientWidth;
+		var width = $(window).width();
 		if(width>720) {
 			$('.panel').css({'height': $(window).height()});
 			$.scrollify({
@@ -300,9 +309,21 @@
 				scrollbars: false,
 				sectionName : "section-name"
 			});
+
+			var height = $(window).height();
+			var sloganHeight = $(".slogan").height();
+			var sliderHeight = $(".slider").height();
+			var sloganMargin = (height-sloganHeight-sliderHeight)/2;
+			if(sloganMargin>0) {
+				$('.slogan').css({'margin-top': sloganMargin});
+			}
 		}else{
 			$('.panel').css({'height': ''});
+			$('.slogan').css({'margin-top': "5px"});
 		}
+
+
+
 	});
 
 	$('.gallery-box').click(function(){
