@@ -226,7 +226,7 @@
 
 				<div class="row wow fadeInUp" id="baidu-map">
 					<div class="col-lg-8 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-			 			<div id="map"></div>
+						<div id="map"></div>
 					</div>
 				</div>
 
@@ -264,9 +264,6 @@
 	<script src="js/custom.js"></script>
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SXe0uIdH58zRjRmFoDZt8wZbsHwYGGnk"></script>
 	<script>
-
-
-
 	$(function() {
 		var width = $(window).width();
 
@@ -329,8 +326,7 @@
 	$('.gallery-box').click(function(){
 			var path = $(this).attr("data-src");
 			$('#galleryImage').attr('src',path);
-		} 
-			);
+	});
 
 	// map
 	function initMap(){
@@ -339,20 +335,24 @@
 		addMapControl();//向地图添加控件
 		addMapOverlay();//向地图添加覆盖物
 	}
+
 	function createMap(){ 
 		map = new BMap.Map("map"); 
 		map.centerAndZoom(new BMap.Point(120.131899,30.26923),19);
 	}
+
 	function setMapEvent(){
 		map.enableKeyboard();
 		map.enableDragging();
 		map.enableDoubleClickZoom()
 	}
+
 	function addClickHandler(target,window){
 		target.addEventListener("click",function(){
 		target.openInfoWindow(window);
 		});
 	}
+
 	function addMapOverlay(){
 		var markers = [
 		{content:"",title:"AIQuant",imageOffset: {width:-46,height:-21},position:{lat:30.26921,lng:120.131787}}
@@ -370,19 +370,22 @@
 		};
 		var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
 		marker.setLabel(label);
+		marker.setAnimation(BMAP_ANIMATION_BOUNCE); 
 		addClickHandler(marker,infoWindow);
 		map.addOverlay(marker);
+
 		};
 	}
-	//向地图添加控件
+
 	function addMapControl(){
 		var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:1});
 		map.addControl(navControl);
 		var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
 		map.addControl(overviewControl);
 	}
+
 	var map;
-		initMap();
+	initMap();
 	</script>
 </body>
 
