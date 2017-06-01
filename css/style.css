@@ -695,6 +695,8 @@ Parallax
       font-size: 25px;
     }
 }
+
+
 @media (max-width:720px) {
 	.team.boxed-grey {
 		margin-bottom: 30px;
@@ -728,6 +730,25 @@ Parallax
     font-size: 20px;
   }
 
+}
+
+@media(max-height: 600px) {
+  .home-section {
+    padding-bottom: 20px;
+    padding-top: 60px;
+  }
+
+  .marginbot-50 {
+    margin-bottom: 30px !important;
+  }
+
+  #map {
+    height: 200px;
+  }  
+
+  #baidu-map {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width:480px) {
@@ -771,11 +792,11 @@ Parallax
 }
 
 #baidu-map {
-  margin-top:35px; 
+  margin-top:15px; 
 }
 
 #map {
-  height: 300px;
+  height: 250px;
   font-size:20px
 }
 
