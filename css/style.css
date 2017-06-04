@@ -727,6 +727,11 @@ Parallax
     #intro p{
       font-size: 25px;
     }
+
+    #footer p{
+      font-size: 16px;
+  }
+
 }
 
 
@@ -761,6 +766,10 @@ Parallax
 
   #intro p{
     font-size: 20px;
+  }
+
+  #footer p{
+    font-size: 10px;
   }
 
 }
