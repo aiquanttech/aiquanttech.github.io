@@ -1025,9 +1025,10 @@ Parallax
 }
 
 #strategy p {
+  color: #000;
   text-align: left;
   width: 90%;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 5%;
   font-size: 14px;
   display: inline-block;
