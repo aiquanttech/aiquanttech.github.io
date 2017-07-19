@@ -1004,6 +1004,7 @@ Parallax
     padding: 0!important;
 }
 
+
 .modal:before {
     content: '';
     display: inline-block;
@@ -1015,4 +1016,23 @@ Parallax
 .modal-dialog {
     display: inline-block;
     vertical-align: middle;
+}
+
+.multi-img {
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+#strategy p {
+  text-align: left;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 5%;
+  font-size: 14px;
+  display: inline-block;
+}
+
+#galleryImage {
+  display: inline-block;
 }
