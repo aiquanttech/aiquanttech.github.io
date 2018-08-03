@@ -326,7 +326,9 @@ hr {
 ============================ */
 
 #intro p {
-  text-align: left;
+  text-align: justify;
+  text-indent: 2em;
+  margin-bottom: 0;
 }
 
 .boxed-grey {
@@ -733,6 +735,11 @@ Parallax
 
 }
 
+@media(min-width: 720px) {
+  .moreToComeSoon {
+    margin-bottom: 100px;
+  }
+}
 
 @media (max-width:720px) {
 	.team.boxed-grey {
@@ -771,6 +778,10 @@ Parallax
     font-size: 10px;
   }
 
+  .moreToComeSoon {
+    margin-bottom: 0px;
+  }
+
 }
 
 @media(max-height: 600px) {
@@ -784,7 +795,7 @@ Parallax
   }
 
   #map {
-    height: 250px;
+    height: 200px;
   }  
 
 
@@ -906,7 +917,7 @@ Parallax
 .gallery-box {
     display: block;
     position: relative;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     max-width: 600px;
     overflow:hidden;
 }
@@ -1023,9 +1034,19 @@ Parallax
 }
 
 
-#strategy p {
+.strategySingleP {
   color: #000;
+  text-align: justify;
+  width: 90%;
+  margin-top: 30px;
+  margin-left: 5%;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.strategyMultiP {
   text-align: center;
+  color: #000;
   width: 90%;
   margin-top: 30px;
   margin-left: 5%;
@@ -1043,6 +1064,7 @@ Parallax
 .strategyHr {
   width: 60%;
 }
+
 .multiImgContainer {
   display: inline-flex;
   flex-wrap: wrap;

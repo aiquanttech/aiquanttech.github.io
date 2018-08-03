@@ -3,7 +3,7 @@ $(function() {
 
 	if(width<720) {
 		$('.slogan').css({'margin-top': "5px"});
-	}
+	} else{
 		$.scrollify({
 			section: '.panel',
 			scrollbars: false,
@@ -30,6 +30,7 @@ $(function() {
 		if(sloganMargin>0) {
 			$('.slogan').css({'margin-top': sloganMargin});
 		}
+	}
 });
 
 $(window).resize(function () {
